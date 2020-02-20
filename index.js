@@ -8,4 +8,6 @@ const fuzzyMatch = (drivers, string) => {
   return drivers.filter( driver =>  driver.slice(0,string.length) === string);
 };
 
-const matchName = ()
+const matchName = (drivers, string) => {
+  return drivers.filter( driver => driver.name === string);
+};
